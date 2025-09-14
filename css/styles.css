@@ -998,6 +998,18 @@ a:hover.back-to-top {
 /*************************/
 /*     Media Queries     */
 /*************************/	
+@media (max-width: 420px) {
+
+	/* Header */
+	.header {
+		padding-top: 7rem;
+    padding-bottom: 5.5rem;
+    background: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)), url(../images/header-background.jpg) right center no-repeat;
+    background-size: cover;
+    text-align: center;
+    color: #ffffff;
+	}
+}
 /* Min-width 768px */
 @media (min-width: 768px) {
 
@@ -1007,6 +1019,7 @@ a:hover.back-to-top {
 		padding-bottom: 9rem;
 	}
 	/* end of header */
+
 
 
 	/* Services */
@@ -1022,6 +1035,8 @@ a:hover.back-to-top {
 		padding: 1.75rem 2rem 0.875rem 2rem;
 	}
 	/* end of extra pages */
+
+	
 }
 /* end of min-width 768px */
 
