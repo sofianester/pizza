@@ -118,7 +118,7 @@ h6 {
 
 a {
 	color: #4d5055;
-	text-decoration: underline;
+	text-decoration: none;
 }
 
 a:hover {
@@ -148,6 +148,10 @@ a:hover {
 	margin: 0;
 	border: none;
 	background-color: #d3dae2;
+}
+.btn-primary {
+border: 1px solid #0b36a8;
+	background-color: #0b36a8;
 }
 
 .btn-solid-reg {
