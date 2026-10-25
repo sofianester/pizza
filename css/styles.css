@@ -1352,8 +1352,11 @@ a:hover.back-to-top {
 }
 
 .project-card {
-	margin-bottom: 2rem;
-	background-color: transparent !important;
+	margin-bottom: 2.5rem;
+	background-color: #ffffff;
+	border-radius: 0.75rem;
+	padding: 1rem 1rem 1.25rem 1rem;
+	box-shadow: 0 4px 20px rgba(36, 38, 42, 0.06);
 	transition: transform 0.2s ease, box-shadow 0.2s ease;
 }
 
@@ -1367,8 +1370,8 @@ a:hover.back-to-top {
 
 .project-card:hover {
 	transform: translateY(-4px);
-	box-shadow: 0 10px 30px rgba(36, 38, 42, 0.08);
-	background-color: transparent;
+	box-shadow: 0 12px 40px rgba(36, 38, 42, 0.12);
+	background-color: #ffffff;
 }
 
 .project-card .image-container {
@@ -1436,5 +1439,10 @@ a:hover.back-to-top {
 		width: 100%;
 		margin-left: 0 !important;
 		margin-right: 0 !important;
+	}
+
+	.project-card {
+		margin-bottom: 3rem;
+		padding: 0.875rem 0.875rem 1.125rem 0.875rem;
 	}
 }
