@@ -523,9 +523,12 @@ input[type='checkbox'] {
 /*     Header     */
 /******************/
 .header {
+	min-height: 100vh;
+	display: flex;
+	align-items: center;
 	padding-top: 7rem;
 	padding-bottom: 5.5rem;
-	background: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)), url('../images/header-background.jpg') center center no-repeat;
+	background: linear-gradient(rgba(0, 0, 0, 0.35), rgba(0, 0, 0, 0.35)), url('../images/header-background.jpg') center center no-repeat;
 	background-size: cover;
 	text-align: center;
 	color: #ffffff;
@@ -594,6 +597,7 @@ input[type='checkbox'] {
 .basic-2 {
 	padding-top: 7.75rem;
 	padding-bottom: 5.25rem;
+	background-color: transparent !important;
 }
 
 .basic-2 .h2-heading {
@@ -1006,12 +1010,15 @@ a:hover.back-to-top {
 
 	/* Header */
 	.header {
+		min-height: 100vh;
+		display: flex;
+		align-items: center;
 		padding-top: 7rem;
-    padding-bottom: 5.5rem;
-    background: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)), url(../images/header-background.jpg) right center no-repeat;
-    background-size: cover;
-    text-align: center;
-    color: #ffffff;
+    	padding-bottom: 5.5rem;
+    	background: linear-gradient(rgba(0, 0, 0, 0.35), rgba(0, 0, 0, 0.35)), url(../images/header-background.jpg) right center no-repeat;
+    	background-size: cover;
+    	text-align: center;
+    	color: #ffffff;
 	}
 }
 /* Min-width 768px */
@@ -1019,6 +1026,9 @@ a:hover.back-to-top {
 
 	/* Header */
 	.header {
+		min-height: 100vh;
+		display: flex;
+		align-items: center;
 		padding-top: 11rem;
 		padding-bottom: 9rem;
 	}
@@ -1128,6 +1138,9 @@ a:hover.back-to-top {
 
 	/* Header */
 	.header {
+		min-height: 100vh;
+		display: flex;
+		align-items: center;
 		padding-top: 15rem;
 		padding-bottom: 14rem;
 		text-align: left;
@@ -1245,6 +1258,9 @@ a:hover.back-to-top {
 
 	/* Header */
 	.header {
+		min-height: 100vh;
+		display: flex;
+		align-items: center;
 		padding-top: 18.25rem;
 		padding-bottom: 17.25rem;
 	}
@@ -1303,3 +1319,122 @@ a:hover.back-to-top {
 	/* end of extra pages */
 }
 /* end of min-width 1200px */
+
+/**************************/
+/*     UX/UI Enhancements */
+/**************************/
+
+
+
+.skip-link:focus {
+	top: 0;
+	color: #ffffff;
+	text-decoration: none;
+	outline: 2px solid #ffffff;
+	outline-offset: 2px;
+}
+
+.name-accent {
+	border-bottom: 3px solid #ffffff;
+	padding-bottom: 0.125rem;
+}
+
+.hero-ctas {
+	display: flex;
+	flex-wrap: wrap;
+	gap: 0.5rem;
+}
+
+.section-subtitle {
+	color: #4d5055;
+	font-size: 1.125rem;
+	line-height: 1.75rem;
+}
+
+.project-card {
+	margin-bottom: 2rem;
+	background-color: transparent !important;
+	transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.project-card .text-container,
+.text-container.project-card,
+.project-card .card,
+.project-card .card-body {
+	background-color: transparent !important;
+	box-shadow: none !important;
+}
+
+.project-card:hover {
+	transform: translateY(-4px);
+	box-shadow: 0 10px 30px rgba(36, 38, 42, 0.08);
+	background-color: transparent;
+}
+
+.project-card .image-container {
+	overflow: hidden;
+	border-radius: 0.375rem;
+}
+
+.project-card .image-container img {
+	transition: transform 0.3s ease;
+}
+
+.project-card:hover .image-container img {
+	transform: scale(1.05);
+}
+
+.project-desc {
+	color: #4d5055;
+	margin-bottom: 0.5rem;
+}
+
+.footer-email {
+	color: #ffffff;
+}
+
+.footer-email a {
+	color: #ffffff;
+	text-decoration: underline;
+}
+
+.footer-email a:hover {
+	color: #ffffff;
+	text-decoration: none;
+}
+
+.footer-ctas {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	gap: 0.5rem;
+}
+
+.btn-primary:hover,
+.btn-primary:focus {
+	background-color: #092d8a;
+	border-color: #092d8a;
+	color: #ffffff;
+	text-decoration: none;
+}
+
+.btn-primary:focus-visible,
+.btn-light:focus-visible {
+	outline: 2px solid #ffffff;
+	outline-offset: 2px;
+	box-shadow: 0 0 0 0.2rem rgba(11, 54, 168, 0.25);
+}
+
+.header {
+	background: linear-gradient(rgba(0, 0, 0, 0.35), rgba(0, 0, 0, 0.35)), url('../images/header-background.jpg') center center no-repeat;
+	background-size: cover;
+}
+
+@media (max-width: 576px) {
+	.hero-ctas .btn,
+	.footer-ctas .btn {
+		width: 100%;
+		margin-left: 0 !important;
+		margin-right: 0 !important;
+	}
+}
